@@ -17,5 +17,5 @@ With JVM arguments :
 ```
 docker run -d -p 25565:25565 \
   -v /mnt/volumes/minecraft:/minecraft \
-  --name=minecraft bahaika/forgecraft:1.7
+  --name=minecraft bahaika/forgecraft:1.7 -Xmn512M -Xmx2048M
 ```
