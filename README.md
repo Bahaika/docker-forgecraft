@@ -4,10 +4,18 @@
 
 #### Usage
 
-Simply start the container with a volume on `/minecraft`. The container will install all the files for minecraft/forge inside this folder and then, you'll be able to customize your installation with ease. You also can add JVM arguments directly to the container whil using the `docker run` command.
+Simply start the container with a volume on `/minecraft`. The container will install all the files for minecraft/forge inside this folder and then, you'll be able to customize your installation with ease. You also can add JVM arguments directly to the container while using the `docker run` command.
 
 ```
 docker run -d -p 25565:25565 \
   -v /mnt/volumes/minecraft:/minecraft \
   --name=minecraft bahaika/forgecraft
+```
+
+With JVM arguments :
+
+```
+docker run -d -p 25565:25565 \
+  -v /mnt/volumes/minecraft:/minecraft \
+  --name=minecraft bahaika/forgecraft -Xmn512M -Xmx2048M
 ```
