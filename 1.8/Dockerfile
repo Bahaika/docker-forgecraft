@@ -1,7 +1,7 @@
 FROM java:8-jre
 MAINTAINER Jérémy SEBAN <jeremy@seban.eu>
 
-ENV FORGE_VERSION 1.7.10-10.13.4.1558-1.7.10
+ENV FORGE_VERSION 1.8-11.14.4.1563
 
 RUN apt-get -qq update
 RUN apt-get -qq -y install wget
