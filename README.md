@@ -9,7 +9,7 @@ Simply start the container with a volume on `/minecraft`. The container will ins
 ```
 docker run -d -p 25565:25565 \
   -v /mnt/volumes/minecraft:/minecraft \
-  --name=minecraft bahaika/forgecraft
+  --name=minecraft bahaika/forgecraft:1.7.10-10.13.4.1558
 ```
 
 With JVM arguments :
@@ -17,5 +17,5 @@ With JVM arguments :
 ```
 docker run -d -p 25565:25565 \
   -v /mnt/volumes/minecraft:/minecraft \
-  --name=minecraft bahaika/forgecraft -Xmn512M -Xmx2048M
+  --name=minecraft bahaika/forgecraft:1.7.10-10.13.4.1558 -Xmn512M -Xmx2048M
 ```
