@@ -1,6 +1,6 @@
 ### Forgecraft
 
-![Forge logo](https://raw.githubusercontent.com/Bahaika/docker-forgecraft/master/forge.png)
+![Forge logo](https://raw.githubusercontent.com/HipsterWhale/docker-forgecraft/master/forge.png)
 
 #### Usage
 
